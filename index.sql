@@ -87,7 +87,33 @@
     SELECT sum(product_price * quantity) FROM orders
     WHERE person_id = 2;
 
+
+    ARTIST
+
+    INSERT INTO artist
+      (artist_id, name)
+      VALUES
+      (276, 'florence and the machine'),
+      (277, 'lana del rey'),
+      (278, 'hayden james');
+
+    SELECT * FROM artist
+    ORDER BY name DESC LIMIT 10;
+
+    SELECT * FROM artist
+    ORDER BY name LIMIT 5;
+
+    SELECT * FROM artist
+    WHERE name like 'Black%';
+
+    SELECT * FROM artist
+    WHERE name like '%Black%';
+
+    EMPLOYEE
+
     
+
+
 
 
 
