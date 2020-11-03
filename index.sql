@@ -58,7 +58,52 @@
   SELECT * from person
   WHERE favorite_color IN ('yellow', 'purple');
 
-  
+
+  ORDERS 
+
+  CREATE TABLE orders (
+  order_id SERIAL PRIMARY KEY,
+  person_id INTEGER,
+  product_name VARCHAR(250),
+  product_price DECIMAL,
+  quantity INTEGER 
+  );
+
+  INSERT INTO orders 
+    (person_id, product_name, product_price, quantity)
+    VALUES
+    (1, 'nutribullet', 75.99, 1),
+    (2, 'theragun', 450.99, 2),
+    (3, 'laptop', 1200, 1),
+     (4, 'really good smoothie', 99, 1),
+    (5, 'sandwich', 5, 1);
+
+    SELECT * FROM orders
+
+    SELECT sum(quantity) FROM orders;
+
+    SELECT sum(product_price) FROM orders;
+
+    SELECT sum(product_price * quantity) FROM orders
+    WHERE person_id = 2;
+
+    
+
+
+
+
+
+
+
+
+
+
+  INVOICE
+
+  SELECT * from invoice 
+  WHERE billing_country = 'USA';
+
+
 
 
 
