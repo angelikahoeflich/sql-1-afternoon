@@ -137,6 +137,27 @@
   SELECT * from invoice 
   WHERE billing_country = 'USA';
 
+  SELECT MAX(total) from INVOICE;
+
+  SELECT MIN(total) from INVOICE;
+
+  SELECT * FROM invoice
+  WHERE total > 5;
+
+  SELECT COUNT(*) FROM invoice
+  WHERE total < 5;
+
+  SELECT COUNT(*) FROM invoice
+  WHERE billing_state IN ('CA', 'TX', 'AZ');
+
+  SELECT avg(total) FROM invoice;
+
+  SELECT sum(total) FROM invoice;
+
+  WOW I LOVE DATABASES! 
+
+
+
 
 
 
